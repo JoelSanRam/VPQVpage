@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./styles.css">
+    
+    <link rel="icon" type="image/x-icon" href="https://aza-asset.s3.amazonaws.com/logo_color.png">
+
+    <title>VIAJO PORQUE VIAJO Mega Outlet 2022</title>
+</head>
+
+<body onload="myFunction()">
+    <nav class="navbar navbar-expand-md fixed-top bg-viajo">
+        <a href="#0" class="d-block w-100 text-center d-md-none"> <img src="./assets/viajoporqueviajom.svg" height="50"
+                alt=""></a>
+        <div class="container">
+            <div class="navbar-collapse collapse justify-content-md-center" id="navbarCollapse">
+                <a href="#owl-slider"> <img src="./assets/viajoporqueviajom.svg" height="100" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 200px;">
+        <div class="colorRosa text-center avertaBold">
+            <h1 name="invitador" id="invitador" class=""></h1>
+            <h1>Gracias por compartir el outlet de viajes más grande de Mérida</h1>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-3"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+                <form id="invitar" name="invitar" action="">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" onkeypress="validarEmailInvitar(emailEnviar.value)" name="emailEnviar"
+                            class="form-control" placeholder="Correo electrónico" id="emailEnviar"
+                            aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="w-100 text-center">
+                        <!-- <a  class="btn btn-info rounded-pill text-white px-5">Registrarme</a> -->
+                        <button onClick="postInvitacion()" type="button"
+                            class="btn btn-info rounded-pill text-white px-5">Invitar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <div class="row my-5 text-center">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"><img
+                    src="./assets/Patrocinios/Coca cola.png" class="img-patrocinador" alt="Patrocinios" srcset=""></div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"><img src="./assets/Patrocinios/Fullgas.png"
+                    class="img-patrocinador" alt="Patrocinios" srcset=""></div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"><img
+                    src="./assets/Patrocinios/Viva aerobus.png" class="img-patrocinador" alt="Patrocinios" srcset="">
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3"><img
+                    src="./assets/Patrocinios/Retro FM.png" class="img-patrocinador" alt="Patrocinios" srcset=""></div>
+        </div>
+    </div>
+    <footer class="seccionFooter py-4">
+        <div class="container">
+            <h3 class="text-center"><b>Viajo por que viajo es una marca de</b><a class="text-decoration-none"
+                    target="_blank" href="https://mx.azabache.travel">
+                    <img src="./assets/logo-azabache.svg" alt="azabache Logo" style="margin-top: -7px;" width="150"></a>
+            </h3>
+            <hr style="color: rgb(211, 19, 163); opacity: 1;">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <ul class="list-unstyled listFooter">
+                        <li data-bs-toggle="modal" data-bs-target="#aviso" style="cursor: pointer;">Aviso de privacidad
+                        </li>
+                        <li data-bs-toggle="modal" data-bs-target="#auto" style="cursor: pointer;">Copyright</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-unstyled listFooter">
+                        <li>
+                            <div class="d-flex justify-content-center">
+                                <img src="./assets/facebook-square-brands.svg" class="me-2" width="20" alt="Facebook">
+                                <h6 class="avertaBold"><a href="https://www.facebook.com/viajoporqueviajomid"
+                                        target="_blank" class="text-decoration-none text-black"
+                                        rel="noopener noreferrer">@viajoporqueviajomid</a>
+                                </h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-center">
+                                <img src="./assets/instagram-brands.svg" class="me-2" width="20" alt="Facebook">
+                                <h6 class="avertaBold"><a href="https://www.instagram.com/viajoporqueviajomid/"
+                                        target="_blank" class="text-decoration-none text-black"
+                                        rel="noopener noreferrer">@viajoporqueviajomid</a>
+                                </h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="aviso" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background-color: rgb(211, 19, 163);">
+                    <h5 class="modal-title" id="registro">Aviso de privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Los términos que se utilicen en el presente aviso de privacidad (en lo sucesivo referido como
+                        “Aviso”) tendrán la definición que a los mismos le asigna la Ley Federal de Protección de Datos
+                        Personales en Posesión de Particulares, (en lo sucesivo referida como la “Ley”) y el Reglamento
+                        de
+                        la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo
+                        referido como el “Reglamento”) publicados en el Diario Oficial de la Federación el 5 de julio de
+                        2010 y el 21 de diciembre de 2011, respectivamente, con excepción expresa de aquellos que aquí
+                        se
+                        definen. <br>
+                        Este Aviso especifica el tipo de datos que Viajo porque Viajo recolecta, los fines para los
+                        cuales
+                        lleva a cabo el tratamiento de los mismos, así como los medios para ejercer los derechos con que
+                        cuenta el titular al respecto. <br>
+                        Aviso de Privacidad TOUR OPERADOR AZABACHE, S. DE R.L DE C.V (en adelante "Azabache Tour
+                        Operador"
+                        ), con domicilio ubicado en: Calle 50 #432bis x 45 y 47 Col. Centro en Mérida, Yucatán, C.P.
+                        97000
+                        ), recaba los datos personales que usted proporcione a "Azabache Tour Operador" serán tratados
+                        con
+                        las siguientes finalidades primarias:</p>
+                    <ul>
+                        <li>Envío de correos con promociones e información sobre viajes</li>
+                        <li>Contactarlo para ofrecerle los servicios de viaje y eventos que comercializamos.</li>
+                        <li>Generar informes estadísticos.</li>
+                    </ul>
+                    <br>
+                    <p>Para dar cumplimiento a la legislación aplicable, así como a requerimientos de autoridades
+                        federales
+                        y locales. Si requiere de mayor información o si tiene cualquier pregunta respecto al
+                        tratamiento de
+                        sus datos personales escríbanos a: <a
+                            href="mailto:hola@viajoporqueviajo.com">hola@viajoporqueviajo.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader" hidden>
+        <img src="https://aza-asset.s3.amazonaws.com/loader.gif" alt="spinner">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function myFunction() {
+            var paramsName = new URLSearchParams(window.location.search);
+            var nameFulanito = paramsName.get('user')
+            document.getElementById('invitador').innerHTML = nameFulanito
+        }
+
+    </script>
+</body>
+
+</html>

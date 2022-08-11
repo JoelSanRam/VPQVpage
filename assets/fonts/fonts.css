@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta.otf");
+    src: url("../fonts/Averta.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AvertaBlackItalic";
+    src: url("../fonts/AvertaBlackItalic.otf");
+    src: url("../fonts/AvertaBlackItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "AvertaSemboldItalic";
+    src: url("../fonts/AvertaSemboldItalic.otf");
+    src: url("../fonts/AvertaSemboldItalic.otf") format("opentype");
+}
